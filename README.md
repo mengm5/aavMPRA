@@ -38,4 +38,5 @@ aavMPRA is a simple tool to obtain readCounts of the candidate enhancers generat
       - tzdata==2024.1
     bowtie=1.3.1 (https://bowtie-bio.sourceforge.net/index.shtml)
     bowtie2=2.5.4 (https://bowtie-bio.sourceforge.net/bowtie2/index.shtml)
+    samtools=1.20 (https://www.htslib.org/)
     ```
