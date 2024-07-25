@@ -59,7 +59,10 @@ aavMPRA is a simple tool to obtain readCounts of the candidate enhancers generat
   * #### 4) the forth is used to distinguish read1 (R1) and read2 (R2).
   ```
   # The example file is at /your_path/aavMPRA/data.
-  
+
+  vim /your_path/aavMPRA/data/fastq_info.txt
+
+  #
   Path	Fastq	Rename	Read
   /aavMPRA/data	test1_1.fastq.gz	Test1	R1
   /aavMPRA/data	test1_2.fastq.gz	Test1	R2
@@ -76,7 +79,10 @@ aavMPRA is a simple tool to obtain readCounts of the candidate enhancers generat
   * #### 6) the sixth is the execution mode, the mutagenesis mode uses bowtie to map reads and the common mode uses bowtie2. 
   ```
   # The example file is at /your_path/aavMPRA/data.
-  
+
+  vim /your_path/aavMPRA/data/parameter.txt
+
+  #
   Steps	Name	Parameter	Explanation	Tool	Mode
   rmAdapters	"-g"	GCAGATGGCTCTTTGTCCTA	"5' adapter to be removed from R1"	cutadapt	generic
   rmAdapters	"-G"	AAGTATCTTTCCTGTGCCCA	"5' adapter to be removed from R2"	cutadapt	generic
