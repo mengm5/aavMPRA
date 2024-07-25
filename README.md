@@ -80,7 +80,6 @@ aavMPRA is a simple tool to obtain readCounts of the candidate enhancers generat
   Steps	Name	Parameter	Explanation	Tool	Mode
   rmAdapters	"-g"	GCAGATGGCTCTTTGTCCTA	"5' adapter to be removed from R1"	cutadapt	generic
   rmAdapters	"-G"	AAGTATCTTTCCTGTGCCCA	"5' adapter to be removed from R2"	cutadapt	generic
-  rmAdapters	"-j"	1	"CPU cores for parallel processing."	cutadapt	generic
   ```
 
 * ### After preparing all input files, run the pipeline by the following command:
