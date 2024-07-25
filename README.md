@@ -15,7 +15,7 @@ aavMPRA is a simple tool to obtain readCounts of the candidate enhancers generat
   export PATH=/your_path/aavMPRA/aavMPRA:$PATH
   ```
 * ### Install dependencies via conda
-  * #### Install conda if it is not on your server (https://docs.conda.io/en/latest/miniconda.html).
+  * #### Install conda if it is not on your server (https://docs.anaconda.com/miniconda/).
   * #### Once conda is installed, create aavMPRA environment by the following command: 
     ```
     conda env create -n aavMPRA -f aavMPRA_environment.yml
