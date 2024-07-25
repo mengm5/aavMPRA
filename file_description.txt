@@ -1,0 +1,38 @@
+aavMPRA
+  aavMPRA: Run the program directly via './aavMPRA -o /output_path -f ./data/fastq_info.txt -p ./data/parameter.txt -m [mutagenesis/common] -i /path_to_index/index_name [--gz]'
+  src
+    main.py: The main code of program. To run the program, please use 'python main.py -h'.
+    0 makeSoftlink.py: Read fastq_info.txt and generate a file path that contains softlinks of fastqs with standard names. 
+      This step will generate a bash file after running the main program: 
+      0_softlink.sh.
+    1 correctReads.py: step1, correct reads structure by cutadapt. 
+      This step will generate three bash file after running the main program: 
+      1.1_rmAdapters.sh
+      1.2_getUMIs.sh
+      1.3_rmUMIs.sh
+    2 mapReads.py: step2, map reads to the bowtie index. 
+      This step will generate a bash file after running the main program:
+      2_mapReads.sh
+    3 readCounts.py: step3, generate readCounts. 
+      This step will generate five bash files: 
+      3.1_extractReadnames.sh
+      3.2_extractUMIs.sh
+      3.3_matchPairs.sh
+      3.4_countUMIs.sh
+      3.5_mergeSamples.sh
+    4 subcode:
+      matchByID.py: Match readsname and UMI.
+      mergeSamples.py: Merge read counts from samples.
+  index
+    Inside-built bowtie/bowtie2 index for mapping (the mutagenesis mode uses bowtie and the common mode uses bowtie2).
+    bowtie-build/bowtie2-build.sh are the code file to build mapping index.
+    The format of reference fasta:
+    >oligo_sequence_id
+    5'--adapter1(GCAGATGGCTCTTTGTCCTA)--enhancer--adapter2(reversed:GCGACGGTCAGAAGACGCTC)--3'
+  data
+    test1_1.fastq (read1, this file contains 100 fastqs for testing)
+    test1_2.fastq (read2, this file contains 100 fastqs for testing)
+    test2_1.fastq (read1, this file contains 100 fastqs for testing)
+    test2_2.fastq (read2, this file contains 100 fastqs for testing)
+  aavMPRA_environment.yml: This file saves the conda environment in which the aavMPRA is currently running. Use 'conda env create -f aavMPRA.yml' to copy this environment in new server. (If there is a problem with strict repo priority, use 'conda config --set channel_priority flexible' to solve.)
+

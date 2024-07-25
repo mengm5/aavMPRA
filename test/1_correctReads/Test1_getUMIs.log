@@ -1,0 +1,36 @@
+This is cutadapt 4.9 with Python 3.12.2
+Command line parameters: -A GCGACGGTCAGAAGACGCTC -U -100 -j 1 --quality-base 28 --untrimmed-output Test1_untrimed_1_rm2.fastq.gz --untrimmed-paired-output Test1_untrimed_2_rm2.fastq.gz -o Test1_R1_rm2.fastq.gz -p Test1_R2_rm2.fastq.gz /data/med-mengm/MPRAproj/MPRA_test3/1_correctReads/Test1_R1_rm1.fastq.gz /data/med-mengm/MPRAproj/MPRA_test3/1_correctReads/Test1_R2_rm1.fastq.gz
+Processing paired-end reads on 1 core ...
+Finished in 0.018 s (183.990 µs/read; 0.33 M reads/minute).
+
+=== Summary ===
+
+Total read pairs processed:                100
+  Read 2 with adapter:                     100 (100.0%)
+Pairs written (passing filters):           100 (100.0%)
+
+Total basepairs processed:        26,001 bp
+  Read 1:        13,001 bp
+  Read 2:        13,000 bp
+Total written (filtered):         14,001 bp (53.8%)
+  Read 1:        13,001 bp
+  Read 2:         1,000 bp
+
+=== Second read: Adapter 1 ===
+
+Sequence: GCGACGGTCAGAAGACGCTC; Type: regular 3'; Length: 20; Trimmed: 100 times
+
+Minimum overlap: 3
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20 bp: 2
+
+Bases preceding removed adapters:
+  A: 26.0%
+  C: 28.0%
+  G: 20.0%
+  T: 26.0%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+20	100	0.0	2	99 1

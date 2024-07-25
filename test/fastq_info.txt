@@ -1,0 +1,5 @@
+Path	Fastq	Rename	Read
+/data/med-mengm/MPRAproj/aavMPRA/data	test1_1.fastq.gz	Test1	R1
+/data/med-mengm/MPRAproj/aavMPRA/data	test1_2.fastq.gz	Test1	R2
+/data/med-mengm/MPRAproj/aavMPRA/data	test2_1.fastq.gz	Test2	R1
+/data/med-mengm/MPRAproj/aavMPRA/data	test2_2.fastq.gz	Test2	R2

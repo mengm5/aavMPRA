@@ -1,0 +1,2 @@
+cd /data/med-mengm/MPRAproj/MPRA_test3/3_readCounts
+python /data/med-mengm/MPRAproj/aavMPRA/src/subcode/mergeSamples.py /data/med-mengm/MPRAproj/MPRA_test3/3_readCounts Test1,Test2 /data/med-mengm/MPRAproj/MPRA_test3/3_readCounts mergedSamplesCount.txt
