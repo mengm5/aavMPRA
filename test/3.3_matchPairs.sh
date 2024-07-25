@@ -1,3 +1,0 @@
-cd /data/med-mengm/MPRAproj/MPRA_test3/3_readCounts
-python /data/med-mengm/MPRAproj/aavMPRA/src/subcode/matchByID.py /data/med-mengm/MPRAproj/MPRA_test3/3_readCounts/Test1_UMIs.txt /data/med-mengm/MPRAproj/MPRA_test3/3_readCounts/Test1_readsName.txt /data/med-mengm/MPRAproj/MPRA_test3/3_readCounts Test1_matchedPairs.txt
-python /data/med-mengm/MPRAproj/aavMPRA/src/subcode/matchByID.py /data/med-mengm/MPRAproj/MPRA_test3/3_readCounts/Test2_UMIs.txt /data/med-mengm/MPRAproj/MPRA_test3/3_readCounts/Test2_readsName.txt /data/med-mengm/MPRAproj/MPRA_test3/3_readCounts Test2_matchedPairs.txt
